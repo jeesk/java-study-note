@@ -1,6 +1,6 @@
 ## There is a collection of notes and demo for some note for JAVA,Spring Boot,Spring CLoud.
 
-[中文/Chinese](https://github.com/jeesk/spring-boot-cloud-study/README_ZH.md)
+[中文/Chinese](https://github.com/jeesk/java-study-note/blob/main/README_zh.md)
 
 ### 1. Spring boot note collection [model description (model name)]
 
