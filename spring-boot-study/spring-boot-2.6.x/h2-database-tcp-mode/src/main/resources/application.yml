@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    # 后面加上MODE=MYSQL;可以兼容mysql语法
+    url: jdbc:h2:tcp://localhost:19200/~/test;DB_CLOSE_DELAY=-1;
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+    hikari:
+      max-lifetime: 120000
+      connection-test-query: select * from dual
+    # 见 H2ConsoleAutoConfiguration
+  h2:
+    console:
+      path: "/h2-console"
+      enabled: true
+server:
+  port: 8888

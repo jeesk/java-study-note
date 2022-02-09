@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    # 后面加上MODE=MYSQL;可以兼容mysql语法, 内存模式只要应用关闭数据就消失,应用启动的时候
+    url: jdbc:h2:mem:~/test-mem;DB_CLOSE_DELAY=-1;MODE=MYSQL;
+    username: sa
+    password: sa
+    schema: classpath:db/schema-h2.sql
+    data: classpath:db/data-h2.sql
+    driver-class-name: org.h2.Driver
+    hikari:
+      max-lifetime: 120000
+      connection-test-query: select * from dual
+    # 见 H2ConsoleAutoConfiguration
+  h2:
+    console:
+      path: "/h2-console"
+      enabled: true
+server:
+  port: 8888
