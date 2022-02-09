@@ -23,7 +23,7 @@
         <module>real-time-push</module>
         <module>scheduler</module>
         <module>multi-scheduler</module>
-        <module>aysnc-scheduler</module>
+        <module>async-scheduler</module>
     </modules>
 
     <properties>

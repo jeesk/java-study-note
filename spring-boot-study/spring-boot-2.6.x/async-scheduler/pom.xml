@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <description>定时异步任务(使用task线程池)</description>
-    <artifactId>aysnc-scheduler</artifactId>
+    <artifactId>async-scheduler</artifactId>
 
 
     <properties>

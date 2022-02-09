@@ -13,7 +13,7 @@ public class SseController {
 	@Autowired
 	ApplicationContext applicationContext;
 	@Autowired
-    PayCompletedListener payCompletedListener;
+	PayCompletedListener payCompletedListener;
 
 	@GetMapping("/push") // 第一步
 	public SseEmitter push(@RequestParam Long payRecordId) {
@@ -35,7 +35,6 @@ public class SseController {
 	public String payCallback(@RequestParam Long payRecordId) {
 		applicationContext.publishEvent(new PayCompletedEvent(this, payRecordId));
 		return "请到监听处查看消息";
-
 	}
 
 }
