@@ -14,7 +14,7 @@
     <artifactId>spring-boot-2.6.x</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>h2-database-memmory-mode</module>
+        <module>h2-database-memory-mode</module>
         <module>h2-database-file-mode</module>
         <module>h2-database-tcp-mode</module>
         <module>exception-handle</module>
