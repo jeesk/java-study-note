@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.task.TaskDecorator;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.context.request.async.TimeoutCallableProcessingInterceptor;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -17,10 +18,10 @@ public class ServiceSpringConfig extends WebMvcConfigurerAdapter implements WebM
 	@Bean
 	public TaskDecorator taskDecorator() {
 		return runnable -> {
-			RequestAttributes context = RequestContextHolder.currentRequestAttributes();
+			ServletRequestAttributes context = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
 			return () -> {
 				try {
-					RequestContextHolder.setRequestAttributes(context);
+					RequestContextHolder.setRequestAttributes(context, true);
 					runnable.run();
 				} finally {
 					RequestContextHolder.resetRequestAttributes();

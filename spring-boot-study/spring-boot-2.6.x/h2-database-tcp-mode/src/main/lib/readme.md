@@ -10,7 +10,7 @@ java -cp h2-1.4.200.jar org.h2.tools.Server -web -webAllowOthers -tcp -tcpPort 1
 Saved Settings: 选择Generic H2 (Server)
 
 JDBC URL:  输入``jdbc:h2:tcp://127.0.0.1:19200/~/test;DB_CLOSE_DELAY=-1;`
-
+点击Connect， 直接进入
 
 运行sql, 创建用户
 ```sql

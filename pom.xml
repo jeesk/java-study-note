@@ -11,12 +11,27 @@
     <modules>
         <module>spring-cloud-study</module>
         <module>spring-boot-study</module>
+        <module>java-api-study</module>
+        <module>data-algorithm-structure</module>
+        <module>design-mode</module>
+        <module>rpc-study</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <lombok.version>1.18.22</lombok.version>
     </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <optional>true</optional>
+                <version>${lombok.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>
