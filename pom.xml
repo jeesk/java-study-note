@@ -11,7 +11,7 @@
     <modules>
         <module>spring-cloud-study</module>
         <module>spring-boot-study</module>
-        <module>java-api-study</module>
+        <module>java-study</module>
         <module>data-algorithm-structure</module>
         <module>design-mode</module>
         <module>rpc-study</module>
