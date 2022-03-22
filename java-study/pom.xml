@@ -20,6 +20,7 @@
         <module>jvm-study</module>
         <module>performance-opt</module>
         <module>scala-study</module>
+        <module>io-study</module>
     </modules>
     <artifactId>java-study</artifactId>
 

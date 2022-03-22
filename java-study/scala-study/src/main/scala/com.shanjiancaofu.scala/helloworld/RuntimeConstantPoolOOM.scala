@@ -7,12 +7,13 @@ import java.util
  * jdk8以下  -XX:MaxPermSize=10m -XX:PermSize=10m
  */
 object RuntimeConstantPoolOOM {
-    def main(args : Array[String]):Unit = {
+    def main(args: Array[String]): Unit = {
         val list = new util.ArrayList[String]()
         var count = 0
-        while (true){
-            list.add(String.valueOf(count+"hellowordhellowordhellowordhellowordhellowordhelloword").intern())
-            count = count +1
+        while (true) {
+            list.add(String.valueOf(count + "hellowordhellowordhellowordhellowordhellowordhelloword").intern())
+            count += 1
         }
+
     }
 }
