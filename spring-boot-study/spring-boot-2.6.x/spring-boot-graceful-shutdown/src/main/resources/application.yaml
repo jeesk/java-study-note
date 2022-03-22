@@ -1,0 +1,7 @@
+server:
+  shutdown: "graceful"
+  port: 7777
+spring:
+  lifecycle:
+    #  无论是否处理完成, 超过20s 一定停机
+    timeout-per-shutdown-phase: "20s"
