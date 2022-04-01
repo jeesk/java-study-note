@@ -21,6 +21,7 @@
         <module>performance-opt</module>
         <module>scala-study</module>
         <module>io-study</module>
+        <module>annotaion-study</module>
     </modules>
     <artifactId>java-study</artifactId>
 

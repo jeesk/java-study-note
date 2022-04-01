@@ -1,4 +1,4 @@
-package com.shanjiancaofu.interview;
+package  com.shanjiancaofu.interview;
 
 public class AutoInectmentOpration {
 	public static void main(String[] args) {
