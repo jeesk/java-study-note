@@ -22,6 +22,7 @@
         <module>scala-study</module>
         <module>io-study</module>
         <module>annotaion-study</module>
+        <module>jdk-study</module>
     </modules>
     <artifactId>java-study</artifactId>
 

@@ -15,11 +15,13 @@
         <module>data-algorithm-structure</module>
         <module>design-mode</module>
         <module>rpc-study</module>
+        <module>dev</module>
+        <module>util</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>19</maven.compiler.source>
+        <maven.compiler.target>19</maven.compiler.target>
         <lombok.version>1.18.22</lombok.version>
     </properties>
     <dependencyManagement>
